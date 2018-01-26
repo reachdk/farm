@@ -17,7 +17,7 @@ Nomination Registered    :,No ,,,,,
 Balance on 1 Jan 2017        :,"2,05,681.35",,,,,
 Start Date          :,1 Jan 2017,,,,,
 End Date            :,31 Dec 2017,,,,,
-Txn Date,Value Date,Description,Ref No./Cheque No.,        Debit,Credit,Balance
+Txn Date,Value Date,Description,Ref No./Cheque No.,        DeCredit,Balancebit,
 14 Jan 2017,14 Jan 2017,   TO TRANSFER-INB ICICIPrudential.com--,054305208438385IGAAPSFIY4               TRANSFER T,10000, ,"1,95,681.35"
 16 Jan 2017,16 Jan 2017,   BY TRANSFER-Transfer through GCC--,TRANSFER FROM 33051734437                         , ,3500,"1,99,181.35"
 25 Jan 2017,25 Jan 2017,CASH CHEQUE-CASH WITHDRAWAL BY CHEQUE--944995,944995,15000, ,"1,84,181.35"
