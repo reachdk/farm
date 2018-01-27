@@ -4,7 +4,7 @@ import os
 import glob
 
 df = pd.DataFrame(columns=['Txn Date', 'Value Date', 'Description', 'Ref No', 'Debit', 'Credit', 'Balance'])
-'''
+#'''
 directory = "/home/deepak/py/farm/source/sbi/"
 for file in os.listdir(directory):
     if file.endswith(".csv"):
@@ -16,10 +16,11 @@ for file in os.listdir(directory):
                 endrow = len(rawdata) - 2
                 rawdata = rawdata[20:endrow]
                 rawdata_df = pd.DataFrame(rawdata)
+                rawdata_df['Acc'] = str(file[0:4])
                 rawdata_df.to_csv(g, header=False)
             f.close()
         g.close()
-'''
-farmConsolidated = pd.read_csv('farmSbiConsolidated.csv', header=None, names=['Txn Date', 'Value Date', 'Description', 'Ref No', 'Debit', 'Credit', 'Balance'])
+#'''
+farmConsolidated = pd.read_csv('farmSbiConsolidated.csv', header=None, names=['Txn Date', 'Value Date', 'Description', 'Ref No', 'Debit', 'Credit', 'Balance', 'Acc'])
 farmConsolidated.to_csv('consolidatedWithHeaders.csv')
 #print(df[0])
